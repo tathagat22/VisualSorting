@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Structure Visualizer</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div id="header">
+      <a href="#home"><div id="title">𝕍𝕚𝕤𝕦𝕒𝕝 𝕊𝕠𝕣𝕥𝕚𝕟𝕘</div></a>
+      <div id="headerLeft">
+        <div class="slidecontainer">
+          <input
+            type="range"
+            min="25"
+            max="300"
+            value="150"
+            class="slider"
+            id="speedSlider"
+          />
+          <div class="speedValue">Speed</div>
+        </div>
+        <div class="slidecontainer">
+          <input
+            type="range"
+            min="10"
+            max="100"
+            value="50"
+            class="slider"
+            id="barSlider"
+          />
+          <div class="sliderValue">Bars: 50</div>
+        </div>
+        <button class="button" id="generateButton">Generate</button>
+      </div>
+      <div id="headerRight">
+        <select name="sort_type" id="sort_type">
+          <option value="insertion" selected>Insertion Sort</option>
+          <option value="bubble">Bubble Sort</option>
+          <option value="merge">Merge Sort</option>
+          <option value="selection">Selection Sort</option>
+          <option value="quick">Quick Sort</option>
+          <!-- <option value="heap">Heap Sort</option>
+          <option value="tim">Tim Sort</option> -->
+        </select>
+      </div>
+    </div>
+    <div id="container"></div>
+    <div id="buttonsdiv">
+      <button type="button" id="sortButton" class="button">Sort</button>
+      <button type="button" id="pauseButton" class="button">Pause</button>
+      <button type="button" id="stopButton" class="button">Stop</button>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
